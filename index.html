@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        /* No longer using CSS smooth scroll; JS will handle it for more control */
+    
         body {
             font-family: 'Inter', sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
         #bg-canvas {
             position: fixed;
@@ -28,7 +28,7 @@
             z-index: 1;
             color: white;
         }
-        /* Custom scrollbar for a more modern look */
+     
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -51,12 +51,12 @@
   will-change: transform, opacity;
 }
 
-/* ABOUT: slide from top */
+
 #about .anim-child { transform: translateY(-30px); }
 #about.is-visible .anim-child { transform: translateY(0); opacity: 1; }
-#about.is-visible .anim-child:nth-child(1) { transition-delay: 0.10s; } /* title */
-#about.is-visible .anim-child:nth-child(2) { transition-delay: 0.18s; } /* divider */
-#about.is-visible .anim-child:nth-child(3) { transition-delay: 0.26s; } /* content */
+#about.is-visible .anim-child:nth-child(1) { transition-delay: 0.10s; } 
+#about.is-visible .anim-child:nth-child(2) { transition-delay: 0.18s; } 
+#about.is-visible .anim-child:nth-child(3) { transition-delay: 0.26s; }
 
 /* EDUCATION: slide from right */
 #education .anim-child { transform: translateX(30px); }
@@ -214,7 +214,7 @@
                     </div>
                     <!-- Project 2 -->
                     <div class="bg-gray-900/50 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 backdrop-blur-sm border border-white/10">
-                        <img src="https://placehold.co/600x400/1A202C/718096?text=News+Monkey" alt="News Monkey App" class="w-full h-48 object-cover">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCXf9DZzkJPpClvssz-Wyd7KgKabmnTta8wWmNUg6rzHzLIYoQwxSJ4r07HNWk" alt="News Monkey App" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-2xl font-bold mb-2">News Monkey App</h3>
                             <p class="text-gray-400 mb-4">A dynamic news aggregator built with React.js. The backend is powered by serverless AWS Lambda functions and an API Gateway, ensuring a scalable and efficient news delivery system from various sources.</p>
